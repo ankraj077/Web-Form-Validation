@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Student Form</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="Validate.js"></script>
+	</head>
+
+	<body>
+		<h1>Student Registration Form</h1><br/>
+		<form>
+        	<label>Enter Name <span>*</span> :</label> <input type="text" id="n"  name="n" />
+            <p id="p1" value=""></p> 
+            <label>Enter Email <span>*</span> :</label> <input type="text" id="email" name="email"/>
+            <p id="p2"></p>
+            <label>Choose Password <span>*</span> :</label> <input type="password" id="pass1" name="password1"/>
+            <p id="p3"></p>
+            <label>Re-enter Password <span>*</span> : </label><input type="password" id="pass2" name="password2"/>
+            <p id="p4"></p>
+            <label>Mobile<span> </span>: </label><input type="text" id="mobile" placeholder="123-456-7890" name="mobile"/>
+            <p id="p5"></p>
+            <label>Website : </label><input type="text" id="website" placeholder="http://abc.website.com" name="website"/>
+            <p id="p6"></p><br/>
+            <input type="submit" value="Submit" onclick="validate(); return false;"/>
+            <input type="reset" value="Reset" onclick="resetData();"/>
+		</form>
+	</body>
+</html>
